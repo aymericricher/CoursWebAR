@@ -1,33 +1,33 @@
 .image-container {
-    position: relative;       /* Nécessaire pour le positionnement absolu des éléments enfants */
-    display: inline-block;    /* Ajuste la taille au contenu */
-    width: 100%;              /* S'adapte à la largeur du conteneur parent */
+    position: relative;       
+    display: inline-block;    
+    width: 100%;              
 }
 
 .main-image {
     display: block;
-    width: 100%;             /* S'adapte à la largeur du conteneur */
+    width: 100%;             
     height: auto;
 }
 
 .overlay-text {
-    position: absolute;       /* Positionné par rapport au conteneur */
-    top: 0%;                 /* 10% depuis le haut du conteneur */
-    color: white;             /* Couleur du texte */
+    position: absolute;       
+    top: 0%;                 
+    color: white;             
     font-size: 1.5em;
     font-weight: bold;
-    text-shadow: 0.125em 0.125em 0.32em black; /* Ombre pour rendre le texte lisible */
-    background-color: green; /* Fond semi-transparent pour améliorer la lisibilité */
+    text-shadow: 0.125em 0.125em 0.32em black; 
+    background-color: green; 
     padding: 0.9em;
-    width: 95.5%;               /* Largeur maximale */
+    width: 95.5%;               
 }
 
 .overlay-image {
     position: absolute;
-    bottom: 10%;              /* 10% depuis le bas */
-    left: 5%;               /* 5% depuis la droite */
+    bottom: 10%;              
+    left: 5%;               
     height: auto;
-    border: 0.2em solid black; /* Bordure blanche */
+    border: 0.2em solid black; 
 }
 
 
@@ -69,20 +69,20 @@ body {
     box-shadow: 0 0 1em rgba(0,0,0,0.1);
 }
 .navbar {
-  display: flex;           /* Aligne les boutons horizontalement */
-  gap: 0.5em;              /* Espacement entre les boutons */
+  display: flex;           
+  gap: 0.5em;              
 }
 
 .nav-button {
-  font-size: 1em;          /* Taille du texte */
-  padding: 0.5em 1em;      /* Espacement intérieur */
+  font-size: 1em;          
+  padding: 0.5em 1em;      
   border: 0.0625em solid rgb(188, 186, 186); 
-  background-color: #ffffff; /* Couleur de fond */
-  color : green;           /* Couleur du texte */
+  background-color: #ffffff; 
+  color : green;           
 }
 
 .nav-button:hover {
-  background-color: green;  /* Effet au survol */
+  background-color: green;  
   color: white;
 }
 
