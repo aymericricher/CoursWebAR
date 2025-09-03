@@ -1,37 +1,60 @@
+
+
+
 h1 {
     background-color: green;         
     color: white;                    
     text-shadow: 0.125em 0.125em 0.32em black;  
-    padding: 0.9em;                             
+    padding: 0.9em;  
     text-align: left;
 
 } 
 
-html {
-   background-color:#7a7a7a;
-
+body h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-size: 2.1em;
 }
 
-body h2
-
 body {
+    font-family: Arial, sans-serif;
+    color: grey;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     margin: 0;
-    background-color: #818181;
+    padding: 0;
+    border-left: 0.5em solid #2d2d2d;   
+    border-right: 0.5em solid #565758; 
+    background-color: #989898;
 }
 
 .container {
     width: 56.25em;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     background: white;
-    padding: 2em;
-    border-radius: 1em;
+    padding: 1em;
+    border-radius: 0em;
     box-shadow: 0 0 1em rgba(0,0,0,0.1);
+}
+.navbar {
+  display: flex;           /* Aligne les boutons horizontalement */
+  gap: 0.5em;              /* Espacement entre les boutons */
+}
+
+.nav-button {
+  font-size: 1em;          /* Taille du texte */
+  padding: 0.5em 1em;      /* Espacement intérieur */
+  border: 0.0625em solid rgb(188, 186, 186); 
+  background-color: #ffffff; /* Couleur de fond */
+  color : green;           /* Couleur du texte */
+}
+
+.nav-button:hover {
+  background-color: green;  /* Effet au survol */
+  color: white;
 }
 
 
