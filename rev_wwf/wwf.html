@@ -6,20 +6,17 @@
         <!--<img src="./elements/bg-header.png" alt="bg-header" width="935em" height="250em">-->
         <link rel="stylesheet" href="./styles.css">
         <div class="image-container">
-            <img src="./elements/bg-header.png" alt="Image principale" class="main-image">
+            <img src="./elements/bg-header.png" alt="bannière" class="main-image">
             <div class="overlay-text">WWF Canada</div>
-            <img src="./elements/logo-wwf.png" alt="Petite image" class="overlay-image">
+            <img src="./elements/logo-wwf.png" alt="logo WWf" class="overlay-image">
         </div>
     </head>
 
 
 <div class="container">
 
-
-
-
-
     <body>
+        
         <br>
         <nav class="navbar">
             <button class="nav-button">Qui sommes-nous ?</button>
@@ -27,7 +24,7 @@
             <button class="nav-button">Contribuez au bien-être des espèces</button>
         </nav>
      
-        <h2 > Notre plan d'action</h2>
+        <h2> Notre plan d'action</h2>
         <p style="color:green; font-size: 1.6em; line-height: 1.7;"> Le <span style="color:green; font-weight:bold; font: size 1.5em;">WWF-Canada</span> s engage à construire un avenir où nature et citoyen cohabitent et prospèrent. </p>
         <p> Conscients de l’importance de la nature et des espèces canadiennes, nous nous engageons à travailler pour : </p>
         <ol> 
@@ -38,14 +35,50 @@
         </ol>
         <p> Durant les cinq prochaines années, notre travail se concentrera aussi sur la recherche et la promotion des meilleures pratiques afin d’atteindre ces objectifs bénéfiques pour tous.  </p>
         
-        <p><span style="color:green; font-weight:bold; font: size 0.9em; line-height: 1.7;">Rapprocher et connecter avec la nature 3,5 millions de canadiens,</span> entraînant ainsi une plus grande compréhension et contribution des citoyens à la création, à la protection et au développement de collectivités saines, et ce, partout au pays.</p>
-        <p>Afin d’enrichir et d’alimenter notre démarche,<span style="color:green; font-weight:bold; font: size 0.9em; line-height: 1.7;">nous poursuivrons nos nombreuses collaborations et partenariats avec diverses initiatives,</span> entraînant ainsi une plus grande compréhension et contribution des citoyens à la création, à la protection et au développement de collectivités saines, et ce, partout au pays.</p>
-        <p>Les espèces telles que les bélugas, les ours polaires, les tortues et les caribous en bénéficieront. Les citoyens vivant dans ces communautés en profiteront. Finalement,<span style="color:green; font-weight:bold; font: size 0.9em; line-height: 1.7;">nous y gagnerons tous!</span></p>
-      
-    
-    </body>    
-</div>
+        <div class="bloc">
+            <div class="texte">
+                <p><span style="color:green; font-weight:bold; font: size 0.9em; line-height: 1.7">Rapprocher et connecter avec la nature 3,5 millions de canadiens,</span> entraînant ainsi une plus grande compréhension et contribution des citoyens à la création, à la protection et au développement de collectivités saines, et ce, partout au pays.</p>
+                <p>Afin d’enrichir et d’alimenter notre démarche,<span style="color:green; font-weight:bold; font: size 0.9em">nous poursuivrons nos nombreuses collaborations et partenariats avec diverses initiatives,</span> entraînant ainsi une plus grande compréhension et contribution des citoyens à la création, à la protection et au développement de collectivités saines, et ce, partout au pays.</p>
+                <p>Les espèces telles que les bélugas, les ours polaires, les tortues et les caribous en bénéficieront. Les citoyens vivant dans ces communautés en profiteront. Finalement,<span style="color:green; font-weight:bold; font: size 0.9em; line-height: 1.7;">nous y gagnerons tous!</span></p>
+            </div>
+            <div class="photo">
+                <img src="./elements/perso.png" alt="Personnage">
+            </div>
+        </div>
+        
+        <img src="./elements/button.png" alt="En savoir plus" width=300em height=auto >
+        <br>
 
+        <h2>Un Commentaire ?</h2>
+
+        <form class="contact-form" action="mailto:richayme1@gmail.com" method="post">
+            <div class="form-row">
+                <div class="form-group">
+                    <label style="color:green; font-weight:bold; font: size 1.1em" for="name">Votre identité</label>
+                    <input placeholder="Prénom(s) / Nom" type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label style="color:green; font-weight:bold; font: size 1.1em" for="email">Votre courriel</label>
+                    <input type="email" id="email" name="email">
+                </div>
+            </div>
+            <br><br>
+            <label style="color:green; font-weight:bold; font: size 1.1em" for="comment">Commentaire :</label><br><br>
+            <textarea id="comment" name="comment" rows = "15" ></textarea><br><br><br>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+
+        <br>
+        <img src="./elements/gift.png" alt="footer" style="border-radius: 1.0em;" width="100%" height="auto">
+        <br><br>
+
+    </body>   
+    
+</div>
+<footer>
+        <p>&nbsp;&nbsp;&nbsp;Sources : Textes / photos WWF - http://www.wwf.ca/fr/</p>
+</footer>
 
 
 
