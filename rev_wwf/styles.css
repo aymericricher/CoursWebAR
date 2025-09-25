@@ -1,0 +1,158 @@
+h1 {
+    background-color: green;         
+    color: white;                    
+    text-shadow: 0.125em 0.125em 0.32em black;  
+    padding: 0.9em;  
+    text-align: left;
+
+} 
+
+body h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-size: 2.1em;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border-left: 0.5em solid #2d2d2d;   
+    border-right: 0.5em solid #565758; 
+    background-color: #989898;
+}
+
+footer {
+    position: relative;       
+    display: inline-block;    
+    width: 100%; 
+    background-color: gray;  
+    color: white;               
+    text-align: left;
+    border-top: black solid 0.3em;                    
+    font-size: 0.8em;           
+}
+
+.image-container {
+    position: relative;       
+    display: inline-block;    
+    width: 100%;              
+}
+
+.main-image {
+    display: block;
+    width: 100%;             
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;       
+    top: 0%;                 
+    color: white;             
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 0.125em 0.125em 0.32em black; 
+    background-color: green; 
+    padding: 0.6em;
+    width: 97%;               
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: 10%;              
+    left: 5%;               
+    height: auto;
+    border: 0.2em solid black; 
+}
+
+.container {
+    width: 56.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background: white;
+    padding: 1em;
+    border-radius: 0em;
+    box-shadow: 0 0 1em rgba(0,0,0,0.1);
+}
+.navbar {
+    display: flex;           
+    gap: 0.5em;              
+}
+
+.nav-button {
+    font-size: 1em;          
+    padding: 0.5em 1em;      
+    border: 0.0625em solid rgb(188, 186, 186); 
+    background-color: #ffffff; 
+    color : green;           
+}
+
+.nav-button:hover {
+    background-color: green;  
+    color: white;
+}
+
+.bloc { 
+    display: flex;
+    align-items: flex-start; 
+    gap: 1.2em; 
+}
+
+.texte {
+    flex: 80%;    
+    text-align: justify;
+}
+
+.photo img {
+    max-width: 15.6em;  
+    height: auto;
+    border-radius: 0.3em;
+    border: rgb(180, 180, 180) solid 0.5em;
+} 
+
+textarea{
+    resize: none;
+    width: 100%;
+    
+}
+
+.form-row {
+    display: flex;          
+    width: 100%;   
+    gap: 0.5em;            
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;   
+    align-items: center;   
+    flex: 1;
+}
+
+.form-group label {
+    margin-right: 0.5em;
+
+}
+
+.form-group input {
+    flex: 1;
+    gap: 0.5em;
+    padding: 0.4em;
+}
+
+.contact-form button {
+    padding: 0.7em;
+    width: 18%;
+    background-color: #efeff0;
+    color: black;
+    border: rgb(151, 151, 151) solid 0.09em;
+    font-size: 0.9em;
+}
+
+
+
+
