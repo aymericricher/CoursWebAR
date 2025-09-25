@@ -9,7 +9,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///C:/Users/richa/Documents/PWD/Git_PWD/exercice-sprites/index.html",
+            "url": "file:///C:/Users/richa/Documents/CoursWebAR/TP1/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
