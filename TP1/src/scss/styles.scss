@@ -1,5 +1,9 @@
 // styles.scss
 
+$text-color: #3a4203;
+$color-white: #ffffff;
+
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +12,7 @@
 
 body {
     font-family : Arial, sans-serif;
-    background-color :white;
+    background-color: $color-white;
   
 }
 
@@ -28,7 +32,7 @@ header {
   font-size: 1.5em; 
   font-family: Arial, Helvetica, sans-serif; 
   background-color: #3a4203;
-  color:#fff; 
+  color: $color-white; 
 }
   
 .sidebar {
@@ -45,7 +49,7 @@ header {
   font-size: 1.1em;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #3a4203;  
+  color: $text-color;  
   padding-bottom: 0.3rem;
 }
 
@@ -53,8 +57,8 @@ header {
 nav a {
   display: block;
   padding: 0.5rem 1rem;
-  text-decoration: none;   /* ⬅️ ça enlève le soulignement */
-  color: #3a4203;
+  text-decoration: none;   
+  color: $text-color;
   font-weight: bold;
   border-radius: 6px;
   transition: background 0.3s, color 0.3s;
@@ -67,7 +71,7 @@ nav a {
 
 
 h1 {
-  color : white;
+  color : $color-white;
 }
 
 main {
@@ -76,7 +80,15 @@ main {
 }
 
 
-
+.footer {
+  grid-area: footer;
+  background: #3a4203;
+  color: $color-white;
+  text-align: center;
+  padding: 1.5em;
+  font-size: 1.3em; 
+  font-family: Arial, Helvetica, sans-serif; 
+}
 
 
 
