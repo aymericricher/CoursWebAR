@@ -118,6 +118,61 @@ main {
   border-radius: 10px;
 }
 
+.tuile {
+  width: 256px;
+  height: 300px;
+  background-image: url("../../img/image_sprite.png");
+  background-repeat: no-repeat;
+}
+
+.film1 {
+  background-position: 0 0;
+}
+
+.film2 {
+  background-position: -16rem 0;
+}
+
+.film3 {
+  background-position: -32em 0;
+}
+
+.film4 {
+  background-position: -48em 0;
+}
+
+.film5 {
+  background-position: -64em 0;
+}
+
+.film6 {
+  background-position: -80em 0;
+}
+
+.film7 {
+  background-position: -96em 0;
+}
+
+.film8 {
+  background-position: -128em 0;
+}
+
+.film9 {
+  background-position: -144em 0;
+}
+
+.film10 {
+  background-position: -160em 0;
+}
+
+.film11 {
+  background-position: -176em 0;
+}
+
+.film12 {
+  background-position: -192em 0;
+}
+
 .footer {
   grid-area: footer;
   background: #454a16;
@@ -133,4 +188,12 @@ main {
 }
 .footer a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .tuile {
+    width: 100px;
+    height: 150px;
+    background-size: 2400px auto;
+  }
 }/*# sourceMappingURL=styles.css.map */
