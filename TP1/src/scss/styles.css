@@ -83,7 +83,7 @@ main {
 }
 
 .widget1eColumns {
-  background-color: rgb(104, 144, 103);
+  background-color: #f4f4f4;
   flex: 1 1 calc(25% - 1.5rem);
   max-width: calc(25% - 1.5rem);
   padding: 1rem;
@@ -92,7 +92,7 @@ main {
 }
 
 .widget2eColumns {
-  background-color: rgb(112, 153, 111);
+  background-color: #f4f4f4;
   flex: 1 1 calc(25% - 1.5rem);
   max-width: calc(25% - 1.5rem);
   padding: 1rem;
@@ -101,7 +101,7 @@ main {
 }
 
 .widget3eColumns {
-  background-color: rgb(104, 145, 112);
+  background-color: #f4f4f4;
   flex: 1 1 calc(25% - 1.5rem);
   max-width: calc(25% - 1.5rem);
   padding: 1rem;
@@ -110,7 +110,7 @@ main {
 }
 
 .widget4eColumns {
-  background-color: rgb(89, 137, 89);
+  background-color: #f4f4f4;
   flex: 1 1 calc(25% - 1.5rem);
   max-width: calc(25% - 1.5rem);
   padding: 1rem;
@@ -120,7 +120,7 @@ main {
 
 .footer {
   grid-area: footer;
-  background: #3a4203;
+  background: #454a16;
   color: #ffffff;
   text-align: center;
   padding: 1.5em;
