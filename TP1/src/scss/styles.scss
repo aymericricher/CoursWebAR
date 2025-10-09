@@ -8,7 +8,7 @@ $widget-color: #f4f4f4;
 $text-color: #3a4203;
 
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -130,6 +130,25 @@ main {
   border-radius: 10px;
 }
 
+
+
+.tuile {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+}
+
+.tuile img {  
+  width: 188px;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+
+
+
+
 .footer {
   grid-area: footer;
   background: $footer-color;
@@ -149,6 +168,15 @@ main {
 }
 
 
+
+
+@media (max-width: 768px) {
+  .tuile {
+    width: 100px;
+    height: 150px;
+    background-size: 2400px auto; 
+  }
+}
 
 
 
