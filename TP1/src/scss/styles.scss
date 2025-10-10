@@ -26,9 +26,9 @@ body {
     "header header"
     "sidebar main"
     "footer footer";
-  grid-template-columns: 250px 1fr; 
+  grid-template-columns: 16.625em 1fr; 
   grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
+  min-height: 62.5em;
 }
 header {
   grid-area: header;
@@ -42,7 +42,7 @@ header {
 .sidebar {
   grid-area: sidebar; 
   background:$sidebar-color; 
-  padding:1rem;
+  padding:1em;
   }
 
 .sidebar nav ul { 
@@ -52,32 +52,32 @@ header {
 .sidebar-title {
   font-size: 1.1em;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
   color: $text-color;  
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.3em;
 }
 
 .img-sidebar img {
   vertical-align: middle;
-  margin-right: 0.5rem;
+  margin-right: 0.5em;
   border-radius: 10%;
 }
 
 
 nav a {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.5em 1em;
   text-decoration: none;   
   color: $text-color;
   font-weight: bold;
-  border-radius: 6px;
+  border-radius: 0.375em;
   transition: background 0.3s, color 0.3s;
   cursor: pointer;
 }
 
 
 .sidebar li {
-  padding: 0.3rem 0;
+  padding: 0.3em 0;
 }
 
 
@@ -87,95 +87,55 @@ h1 {
 
 main {
   grid-area: main;
-  padding: 1rem;
+  padding: 1em;
 }
 
 .widgets {
   display: flex;      
   flex-wrap: wrap;        
-  gap: 2rem;              
+  gap: 2em;              
   justify-content: center;
 }
 
-.widget1eColumns {
-  background-color: $widget-color;
-  flex: 1 1 calc(25% - 1.5rem); 
-  max-width: calc(25% - 1.5rem);    
-  padding: 1rem;
-  text-align: center;
-  border-radius: 10px;
-}
-.widget2eColumns {
-  background-color: $widget-color;
-  flex: 1 1 calc(25% - 1.5rem); 
-  max-width: calc(25% - 1.5rem);             
-  padding: 1rem;
-  text-align: center;
-  border-radius: 10px;
-}
-.widget3eColumns {
-  background-color: $widget-color;
-  flex: 1 1 calc(25% - 1.5rem); 
-  max-width: calc(25% - 1.5rem);      
-  padding: 1rem;
-  text-align: center;
-  border-radius: 10px;
-}
-.widget4eColumns {
-  background-color: $widget-color;
-  flex: 1 1 calc(25% - 1.5rem); 
-  max-width: calc(25% - 1.5rem);     
-  padding: 1rem;
-  text-align: center;
-  border-radius: 10px;
+.widgets a {
+  display: inline-block; 
+  text-decoration: none; 
+  color: inherit; 
 }
 
+.widget {
+  background-color: $widget-color;
+  flex: 1 1 calc(25% - 1.5em); 
+  max-width: calc(25% - 1.5em);    
+  padding: 1em;
+  text-align: center;
+  border-radius: 0.625em;
+}
+
+
 .tuile {
-  width: 256px;
-  height: 300px;
+  width: 16em;
+  height: 18.75em;
   background-image: url('../../img/image_sprite.png');
   background-repeat: no-repeat;
 }
 
-.film1 {
-  background-position: 0 0;
-}
-.film2 {
-  background-position: -16rem 0; 
-}
-.film3 {
-  background-position: -32em 0; 
-}
+.film1 {background-position: 0 0;}
+.film2 {background-position: -16em 0;}
+.film3 {background-position: -32em 0;}
+.film4 {background-position: -48em 0;}
+.film5 {background-position: -64em 0;}
+.film6 {background-position: -80em 0;}
+.film7 {background-position: -96em 0;}
+.film8 {background-position: -128em 0;}
+.film9 {background-position: -144em 0;}
+.film10 {background-position: -160em 0;}
+.film11 {background-position: -176em 0;}
+.film12 {background-position: -192em 0;}
 
-.film4 {
-  background-position: -48em 0; 
+.widgets a {
+  color: rgb(60, 60, 218);
 }
-.film5 {
-  background-position: -64em 0;
-}
-.film6 {
-  background-position: -80em 0
-}
-.film7 {
-  background-position: -96em 0;
-}
-.film8 {
-  background-position: -128em 0;
-}
-.film9 {
-  background-position: -144em 0;
-}
-.film10 {
-  background-position: -160em 0;
-}
-.film11 {
-  background-position: -176em 0;
-}
-.film12 {
-  background-position: -192em 0;
-}
-
-
 
 
 .footer {
@@ -196,15 +156,52 @@ main {
   }
 }
 
+.widgets a.tuile-link { display: inline-block; }
+.widgets a.detail-link { display: inline-block; }
+
 
 @media (max-width: 768px) {
+  /* on réduit la taille des tuiles mais on NE CHANGE PAS background-size */
   .tuile {
-    width: 100px;
-    height: 150px;
-    background-size: 2400px auto; 
-  }
-}
+    width: 5.75em;
+    height: 9.375em;
+    background-repeat: no-repeat;
+    background-position: center; /* fallback si besoin */
 
+    background-size: 75em 9.375em;
+  }
+
+  .film1 {background-position: 0 0;}
+  .film2 {background-position: -5.75em 0;}
+  .film3 {background-position: -11.52em 0;}
+  .film4 {background-position: -17.3em 0;}
+  .film5 {background-position: -23.1em 0;}
+  .film6 {background-position: -28.75em 0;}
+  .film7 {background-position: -34.61em 0;}
+  .film8 {background-position: -40.37em 0;}
+  .film9 {background-position: -46.12em 0;}
+  .film10 {background-position: -51.87em 0;}
+  .film11 {background-position: -57.69em 0;}
+  .film12 {background-position: -63.4em 0;}
+ 
+  /* cacher le titre et le lien "En savoir plus" mais PAS la tuile-link */
+  .widgets p { display: none; }
+  .widgets a.detail-link { display: none; }
+
+  /* masquer la sidebar */
+  .sidebar { display: none; }
+
+  /* adapter la grille */
+  .dashboard {
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+
+  .widgets { justify-content: center; }
+}
 
 
 
