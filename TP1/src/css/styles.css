@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -154,7 +153,31 @@ main {
 }
 
 .widgets a {
-  color: rgb(60, 60, 218);
+  color: #3f2eba;
+}
+
+.widgets a.tuile-link {
+  display: inline-block;
+}
+
+.detail-link {
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 0.6em 1.2em;
+  border: 0.1em solid #3f2eba;
+  border-radius: 0.5em;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-top: 0.8em;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.detail-link:hover {
+  background-color: #3f2eba;
+  color: #ffffff;
+  transform: scale(1.05);
 }
 
 .footer {
@@ -174,21 +197,12 @@ main {
   text-decoration: underline;
 }
 
-.widgets a.tuile-link {
-  display: inline-block;
-}
-
-.widgets a.detail-link {
-  display: inline-block;
-}
-
 @media (max-width: 768px) {
-  /* on réduit la taille des tuiles mais on NE CHANGE PAS background-size */
   .tuile {
     width: 5.75em;
     height: 9.375em;
     background-repeat: no-repeat;
-    background-position: center; /* fallback si besoin */
+    background-position: center;
     background-size: 75em 9.375em;
   }
   .film1 {
@@ -227,18 +241,15 @@ main {
   .film12 {
     background-position: -63.4em 0;
   }
-  /* cacher le titre et le lien "En savoir plus" mais PAS la tuile-link */
   .widgets p {
     display: none;
   }
   .widgets a.detail-link {
     display: none;
   }
-  /* masquer la sidebar */
   .sidebar {
     display: none;
   }
-  /* adapter la grille */
   .dashboard {
     grid-template-areas: "header" "main" "footer";
     grid-template-columns: 1fr;
