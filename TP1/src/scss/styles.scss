@@ -8,7 +8,6 @@ $widget-color: #f4f4f4;
 $text-color: #3a4203;
 $link-color: #3f2eba;
 
-
 *{
   margin: 0;
   padding: 0;
@@ -31,6 +30,7 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 62.5em;
 }
+
 header {
   grid-area: header;
   padding: 1em;
@@ -64,7 +64,6 @@ header {
   border-radius: 10%;
 }
 
-
 nav a {
   display: block;
   padding: 0.5em 1em;
@@ -76,11 +75,9 @@ nav a {
   cursor: pointer;
 }
 
-
 .sidebar li {
   padding: 0.3em 0;
 }
-
 
 h1 {
   color : $color-white;
@@ -113,7 +110,6 @@ main {
   border-radius: 0.625em;
 }
 
-
 .tuile {
   width: 16em;
   height: 18.75em;
@@ -140,7 +136,6 @@ main {
 
 .widgets a.tuile-link { display: inline-block; }
 
-
 .detail-link {
   display: inline-block;
   background-color: $color-white;          
@@ -155,14 +150,11 @@ main {
   cursor: pointer;
 }
 
-
 .detail-link:hover {
   background-color: $link-color; 
   color: $color-white;  
   transform: scale(1.05);      
 }
-
-
 
 .footer {
   grid-area: footer;
@@ -181,9 +173,6 @@ main {
     }
   }
 }
-
-
-
 
 @media (max-width: 768px) {
  
@@ -227,30 +216,3 @@ main {
 
   .widgets { justify-content: center; }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
