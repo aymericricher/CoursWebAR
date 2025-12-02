@@ -16,7 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let c = 0; c < 15; c++) {
       const td = document.createElement('td');
       tr.appendChild(td);
+
+
+      const nombre = _.random(10, 90);
+      td.textContent = nombre; 
+
+
     }
+
     table.appendChild(tr);
   }
 
