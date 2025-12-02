@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   h1.textContent = 'Tableau de nombres'
   document.body.insertBefore(h1, table);
 
+  let compteur = 0;
 
   for (let i = 0; i < 10; i++) {
     const tr = document.createElement('tr');
@@ -17,11 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const td = document.createElement('td');
       tr.appendChild(td);
 
-
       const nombre = _.random(10, 90);
       td.textContent = nombre; 
 
-
+      if (nombre > 80) {
+          td.classList.add('highlight')
+          compteur++
+        }
     }
 
     table.appendChild(tr);
