@@ -29,3 +29,9 @@ td {
     margin-top: 20px;
     font-size: 18px;
 }
+
+.highlight {
+  background-color: rgb(5, 173, 131);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
