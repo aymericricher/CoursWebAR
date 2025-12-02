@@ -30,10 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
     table.appendChild(tr);
   }
 
+  const p = document.createElement('p');
+  p.id = 'compteur';
+  p.textContent = `Nombre de cellules ayant un nombre supérieur à 80 : ${compteur}`;
+  document.body.appendChild(p);
 
-
-
-
-  
 
 });
