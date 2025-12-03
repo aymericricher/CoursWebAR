@@ -1,4 +1,39 @@
 body {
       background: #fafafa;
-    }
-    
+}
+
+.title-box {
+  border: 2px solid black;
+  padding: 15px;
+  text-align: center;
+  font-size: 28px;
+  background: white;
+}
+
+.definition-box {
+  border: 2px solid black;
+  width: 280px;
+  height: 260px;
+  background: white;
+  padding: 10px;
+  overflow-y: scroll; 
+  font-size: 14px;    
+  text-align: left;  
+}
+
+.result-box {
+  border: 2px solid black;
+  background: #eee;
+  font-size: 28px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.btn-calc {
+  border: 2px solid black !important;
+  padding: 12px 40px;
+  font-size: 22px;
+  background: #e9e9e9;
+}
+  
