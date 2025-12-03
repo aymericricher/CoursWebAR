@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.3.8"
   }
 }
