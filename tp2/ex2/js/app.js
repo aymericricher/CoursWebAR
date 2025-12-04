@@ -62,6 +62,28 @@ function calculerCD (flap, mach, cl) {
     return CDp + K * (cl * cl) + CDcomp
 }
 
+function validerChamps () {
+    const flap = document.getElementById('flap').value
+    const mach = Number(document.getElementById('mach').value)
+    const cl = Number(document.getElementById('cl').value)
+
+    if (flap === '') {
+        alert('Veuillez sélectionner un flap.')
+        return false
+    }
+
+    if (isNaN(mach) || mach < 0 || mach > 0.85) {
+        alert('La valeur du Mach doit être entre 0 et 0.85.')
+        return false
+    }
+
+    if (isNaN(cl) || cl < 0.2 || cl > 1.2) {
+        alert('Le coefficient de portance doit être entre 0.2 et 1.2.')
+        return false
+    }
+
+    return true
+}
 
 
 
