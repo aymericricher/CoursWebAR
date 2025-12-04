@@ -1,0 +1,52 @@
+TP2 – Programmation Web Dynamique
+Nom de l’étudiant : RICHER Aymeric
+
+Description générale: 
+
+Ce projet contient les solutions complètes pour les deux exercices du TP2 :
+- Exercice 1 : Génération dynamique d’une grille de nombres avec Lodash
+- Exercice 2 : Calculateur de coefficient de traînée (CD) avec Bootstrap et fetch()
+
+
+
+
+Exercice 1 – Grille de nombres :
+
+• Utilisation de Lodash (_random) pour générer les nombres aléatoires.
+• Grille 15 x 20 générée entièrement en JavaScript via le DOM.
+• Les cellules avec un nombre > 80 ont :
+     - fond : rgb(5, 173, 131)
+     - texte : rgb(255, 255, 255)
+• Le nombre total de cellules > 80 est affiché sous la grille.
+• Les paramètres (taille de la grille, min, max, etc.) sont chargés via :
+     http://localhost:8080/params_grille_nombres.php
+• Code validé avec StandardJS.
+
+
+Exercice 2 – Calculateur de coefficient de traînée :
+
+• Mise en page réalisée avec Bootstrap pour reproduire fidèlement le wireframe.
+• Le calcul du CD utilise la formule :
+       CD = CDp + K * Cl² + CDcomp
+• Les valeurs CDp et K sont chargées dynamiquement depuis :
+       http://localhost:8080/data_cdp_k.php
+• Le fichier retournait un tableau formaté différemment que prévu :
+       data_cdp_k.cdp[] et data_cdp_k.k[]
+   Le script a été adapté en conséquence.
+• Le texte des définitions est chargé depuis :
+       http://localhost:8080/definition_forces.php
+  et affiché dans un bloc à défilement.
+• Toutes les validations du formulaire sont gérées en JavaScript.
+• Code conforme à StandardJS.
+
+
+
+Particularités et remarques :
+
+
+• Le bloc "Définition forces" utilise un conteneur fixe avec scroll pour respecter la mise en page du TP.
+• L’API retournait les valeurs de cdp/k sous forme de tableaux, nécessitant un mappage par index des flaps (0, 20, 45).
+• Les chemins des scripts sont relatifs car les pages sont chargées via Docker sous http://localhost:8080.
+
+
+
