@@ -86,7 +86,23 @@ function validerChamps () {
 }
 
 
+document.getElementById('btnCalcul').addEventListener('click', () => {
+    if (!validerChamps()) return
 
+    const flap = document.getElementById('flap').value
+    const mach = document.getElementById('mach').value
+    const cl = document.getElementById('cl').value
+
+    const cd = calculerCD(flap, mach, cl)
+    const zoneResultat = document.getElementById('result')
+
+    zoneResultat.innerHTML = `CD = ${cd.toFixed(5)}`
+})
+
+window.addEventListener('DOMContentLoaded', async () => {
+    await chargerCDPK()
+    await chargerDefinitionForces()
+})
 
 
 
