@@ -40,6 +40,32 @@ async function chargerDefinitionForces () {
     }
 }
 
+function calculerCD (flap, mach, cl) {
+    flap = Number(flap)
+    mach = Number(mach)
+    cl = Number(cl)
+
+ 
+    const index = flap === 0 ? 0 : flap === 20 ? 1 : 2
+
+    const CDp = dataCDPK.data_cdp_k.cdp[index]
+    const K = dataCDPK.data_cdp_k.k[index]
+
+    let CDcomp = 0
+
+    if (mach > 0.6 && mach <= 0.78) {
+        CDcomp = (0.0508 - 0.1748 * mach + 0.1504 * mach * mach) * (cl * cl)
+    } else if (mach > 0.78 && mach <= 0.85) {
+        CDcomp = (-99.3434 + 380.888 * mach - 486.8 * mach * mach + 207.408 * mach ** 3) * (cl * cl)
+    }
+
+    return CDp + K * (cl * cl) + CDcomp
+}
+
+
+
+
+
 
 
 
